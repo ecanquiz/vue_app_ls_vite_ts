@@ -1,10 +1,8 @@
 <template>
-  <div id="app">
-    <h2>My Vue 3 Project</h2>
-    <div class="text-green-400">sdsd</div>
+  <div id="app">        
     <div id="nav" class="nav">
-      <router-link to="/" :class="[$route.name === 'home' ? activeClass : inactiveClass]">Home</router-link> |
-      <router-link to="/about" :class="[$route.name === 'about' ? activeClass : inactiveClass]">About</router-link>
+      <router-link to="/" :class="[$route.name === 'Home' ? 'activeClass' : 'inactiveClass']">Home</router-link> |
+      <router-link to="/about" :class="[$route.name === 'About' ? 'activeClass' : 'inactiveClass']">About</router-link>
     </div>
     <router-view />
   </div>
@@ -16,17 +14,8 @@ import { defineComponent, ref } from 'vue'
 export default defineComponent({
   name: 'App',
   setup() {
-    
-    const activeClass = ref(
-      "bg-gray-600 bg-opacity-25 text-gray-100 border-gray-100"
-    );
-    const inactiveClass = ref(
-      "border-gray-900 text-gray-300 hover:bg-gray-200 hover:bg-opacity-25 hover:text-gray-100"
-    );
-
     return {
-      activeClass,
-      inactiveClass,
+    
     };
   }
 })
@@ -39,6 +28,7 @@ export default defineComponent({
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+    padding: 30px;
 }
 
 h2 {
@@ -49,12 +39,11 @@ h2 {
   padding: 30px;
 }
 
-a {
-  font-weight: bold;
-  color: #2c3e50;
+.activeClass {
+  @apply text-green-600 underline hover:font-bold;
 }
-  
-a .router-link-exact-active {
-  color: #42b983;
+.inactiveClass {
+  @apply text-gray-600 underline hover:font-bold;
 }
+
 </style>

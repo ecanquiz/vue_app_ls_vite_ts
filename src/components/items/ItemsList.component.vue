@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>Items:</h3>
-    <ul>
+    <ul class="list-disc">
       <li v-for="item in items" :key="item.id">{{ item.name }}</li>
     </ul>
   </div>
