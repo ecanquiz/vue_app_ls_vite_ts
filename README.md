@@ -44,3 +44,18 @@ module.exports = {
   plugins: []
 }
 ```
+npm i -D eslint
+
+npm i -D eslint-config-prettier
+
+npm i -D eslint-plugin-vue
+
+npm i -D prettier
+
+npm i -D @vue/eslint-config-typescript
+
+npm i -D @typescript-eslint/parser
+
+npm i -D @typescript-eslint/eslint-plugin
+
+https://miyauchi.dev/posts/vite-vue3-typescript/

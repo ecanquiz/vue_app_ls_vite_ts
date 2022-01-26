@@ -1,8 +1,8 @@
 <template>
   <div id="app">        
     <div id="nav" class="nav">
-      <router-link to="/" :class="[$route.name === 'Home' ? 'activeClass' : 'inactiveClass']">Home</router-link> |
-      <router-link to="/about" :class="[$route.name === 'About' ? 'activeClass' : 'inactiveClass']">About</router-link>
+      <router-link to="/" :class="[$route.name === 'home' ? 'activeClass' : 'inactiveClass']">Home</router-link> |
+      <router-link to="/about" :class="[$route.name === 'about' ? 'activeClass' : 'inactiveClass']">About</router-link>
     </div>
     <router-view />
   </div>
