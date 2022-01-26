@@ -59,3 +59,5 @@ npm i -D @typescript-eslint/parser
 npm i -D @typescript-eslint/eslint-plugin
 
 https://miyauchi.dev/posts/vite-vue3-typescript/
+
+npm install --save-dev @types/jest
