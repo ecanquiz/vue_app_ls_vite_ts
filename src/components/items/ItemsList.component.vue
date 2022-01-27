@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Items:</h3>
+      <h3>Items - loading: {{ loading }}</h3>
     <ul class="list-disc">
     <ItemComponent v-for="item in items"
       :key="item.id"
@@ -23,6 +23,9 @@ export default defineComponent({
     items: {
       type: Array as PropType<ItemInterface[]>,
       default: () => []
+    },
+    loading: {
+      type: Boolean
     }
   },
   setup() {
