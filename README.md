@@ -60,4 +60,6 @@ npm i -D @typescript-eslint/eslint-plugin
 
 https://miyauchi.dev/posts/vite-vue3-typescript/
 
-npm install --save-dev @types/jest
+npm i -D @types/jest
+
+npm i axios
