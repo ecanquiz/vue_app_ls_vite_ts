@@ -11,13 +11,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     }
   },
-  define: {
-    'process.env': {
-      VUE_APP_API_CLIENT: "mock",        
-    }
-  },
   test: {
     globals: true,
     environment: "jsdom",
   },
+  define: {
+    'process.env': {
+      VUE_APP_API_CLIENT: "mock",        
+    }
+  }
 })

@@ -3,7 +3,6 @@ import { ItemInterface } from '@/models/items/Item.interface'
 import { ItemsStateInterface } from '@/models/store/ItemsState.interface'
 import apiClient from '@/api-client'
 
-
 const state: ItemsStateInterface = {
   loading: false,
   items: []
@@ -32,7 +31,7 @@ export default createStore({
     }
   },
   actions: {
-    loadItems({ commit, state }) {
+    loadItems({ commit }) {
       commit('loadingItems')      
       setTimeout(() => {
         apiClient

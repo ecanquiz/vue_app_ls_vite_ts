@@ -2,8 +2,9 @@
   <div>
       <!--h3>Items - loading: {{ loading }}</h3-->
       <Loader v-show="loading" />
-    <ul class="list-disc" v-show="!loading">
-    <ItemComponent v-for="item in items"
+    <ul v-show="!loading" class="list-disc">
+    <ItemComponent 
+      v-for="item in items"
       :key="item.id"
       :model="item"
       @select="onItemSelect" />

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <ItemsListComponent 
+    <ItemsListComponent
       :items="items"
       :loading="loading"
       @select-item="onSelectItem" />

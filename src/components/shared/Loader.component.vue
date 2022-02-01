@@ -1,5 +1,5 @@
 <template>
-  <div class="loader" v-show="show">
+  <div v-show="show" class="loader">
     <div class="bounceball"></div>
   </div>
 </template>
@@ -8,6 +8,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+  name: "LoaderComponent",
   props: {
     show: {
       type: Boolean

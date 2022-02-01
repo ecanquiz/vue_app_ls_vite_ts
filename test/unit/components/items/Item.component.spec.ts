@@ -16,10 +16,10 @@ describe('Item.component.vue', () => {
       }
     })
 
-    expect(wrapper.text()).to.include('Unit test item 1')
+    expect(wrapper.text()).toContain('Unit test item 1')
 
     const domEl = wrapper.find('div.name')
-    expect(domEl.text()).to.equal('Unit test item 1')
+    expect(domEl.text()).toEqual('Unit test item 1')
 
   })
 
@@ -37,6 +37,7 @@ describe('Item.component.vue', () => {
     })
 
     const classes = wrapper.classes()
+      console.log(classes)
       expect(classes).to.be.an('array')
         .that.includes('item')
       expect(classes).to.be.an('array')
